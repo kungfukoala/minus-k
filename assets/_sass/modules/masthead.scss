@@ -1,0 +1,28 @@
+.masthead {
+  @include span(12/12);
+  font-size:$base-font-size;
+  a {
+    text-decoration:none;
+  }
+  @include min-screen(nth($res-collection, 4)*1px) {
+    font-size:$font-small;
+  }
+  .site-navigation {
+    @include min-screen(nth($res-collection, 4)*1px) {
+      @include span(1/1);
+      font-weight:800;
+      @include navigation-horizontal($ul-width:100%);
+      ul li {
+        @include span(1/10);
+        text-align:center;
+      }
+    }
+  }
+  .global-navigation {
+    @include span(3/12, $offset: 9/12);
+    @include navigation-horizontal($float: right);
+    a {
+      text-transform:uppercase;
+    }
+  }
+}

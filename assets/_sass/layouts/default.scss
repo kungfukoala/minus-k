@@ -1,0 +1,6 @@
+.main-container {
+  @include center(980px);
+}
+.footer {
+  @include span(12/12);
+}

@@ -1,9 +1,9 @@
 # SITE SETTINGS
-title:                Title here
-subtitle:             Subtitle here
+title:                "Minus K Technology"
+subtitle:             "Vibration Isolation Platform & Table Systems | Isolators, Platforms & Tables"
 email:                Email here
 author:               Name Here
-description:          Site description here.
+description:          "Vibration isolation platform & table systems, isolator platforms, tables & benches. Our anti-vibration technologies, vibration control isolators & isolation table products offer the best devices among companies & manufacturers of anti vibration equipment."
 baseurl:              "" # subpath if necessary, e.g. /blog/
 url:                  "" # base url http://url.com
 

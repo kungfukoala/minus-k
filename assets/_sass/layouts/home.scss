@@ -1,0 +1,27 @@
+.introduction {
+  @include span(9/12);
+  .interactive-area {
+    @include span(4/6);
+  }
+  .new-product {
+    @include span(2/6);
+  }
+}
+.case-study {
+  @include span(3/12);
+}
+.advantages {
+  @extend .case-study;
+}
+.vibration-isolation {
+  @include span(6/12);
+}
+.press-release {
+  @extend .case-study;
+}
+.floor-platform, .in-the-news {
+  @include span(6/12);
+}
+.for-use-in {
+  @include span(12/12);
+}

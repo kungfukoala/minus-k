@@ -1,0 +1,10 @@
+global_navigation:
+  home:
+    url:  "/"
+    text: "Home"
+  sitemap:
+    url:  "/about_vibration_isolation_passive_vibration_isolators.html"
+    text: "Sitemap"
+  faq:
+    url:  "/applications_vibration_isolation_systems.html"
+    text: "Faq"

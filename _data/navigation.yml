@@ -1,7 +1,31 @@
 main_navigation:
-  profile:
-    url:  "/profile/"
-    text: "Profile"
+  home:
+    url:  "/"
+    text: "Home"
+  about:
+    url:  "/about_vibration_isolation_passive_vibration_isolators.html"
+    text: "About Minus K"
+  applications:
+    url:  "/applications_vibration_isolation_systems.html"
+    text: "Applications"
+  products:
+    url:  "/products-vibration-isolation-isolators-tables-systems.html"
+    text: "Products"
+  technology:
+    url:  "/technology_passive_vibration_isolation_vibration_isolators.html"
+    text: "Technology"
+  events:
+    url:  "/events_vibration_isolation_nanotechnology_tradeshows.html"
+    text: "Events"
+  news:
+    url:  "/in-the-news_vibration_control_anti_vibration_isolation.html"
+    text: "In The News"
   contact:
-    url:  "/contact/"
-    text: "Contact"
+    url:  "/contact_for_vibration_isolation_platforms_tables_isolators.html"
+    text: "Contact Us"
+  links:
+    url:  "/links_anti_vibration_isolator_vibration_isolators.html"
+    text: "Links"
+  price:
+    url:  "/price-list_vibration_isolators_table_platforms_benchtops.html"
+    text: "Price List"

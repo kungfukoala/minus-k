@@ -1,23 +1,41 @@
 ---
 layout: default
 ---
-<div class="home">
-  <img src="http://placehold.it/350x150">
-  <div class="posts">
-    {% for post in paginator.posts %}
-      <div class="post">
-        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h2 post-title">{{ post.title }}</h3></a>
-        <p class="post-summary">
-          {% if post.summary %}
-            {{ post.summary }}
-          {% else %}
-            {{ post.excerpt }}
-          {% endif %}
-        </p>
-      </div>
-    {% endfor %}
-  </div>
+<div class="container">
+  <div class="introduction">
+    <div class="interactive-area">
+      Interactive Area
 
-  {% include pagination.html %}
+    </div>
+    <div class="new-product">
+      New Product
+    </div>
+  </div>
+  <div class="case-study">
+    Case Study
+  </div>
+</div>
+<div class="container">
+  <div class="advantages">
+    Advantages
+  </div>
+  <div class="vibration-isolation">
+    Vibration Isolation
+  </div>
+  <div class="press-release">
+    James Webb
+  </div>
+</div>
+<div class="container">
+  <div class="floor-platform">
+    Floor Platform
+  </div>
+  <div class="in-the-news">
+    Minus K In The News
+  </div>
+</div>
+<div class="container">
+  <div class="for-use-in">
+    Standard and Custom Vibration Isolation with Better Performance than Active Systems
+  </div>
 </div>
