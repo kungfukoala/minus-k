@@ -1,0 +1,74 @@
+.header {
+  @include span(12/12);
+  font-size:$base-font-size;
+  a {
+    text-decoration:none;
+    color:$primary;
+  }
+  @include min-screen(nth($res-collection, 4)*1px) {
+    font-size:$font-medium;
+    background-color:$primary;
+  }
+  .site-title {
+    @include span(12/12);
+    height:75px;
+    @include background-images('minusk-technology-logo.png', $x: center);
+    text-indent:-9999px;
+    white-space:nowrap;
+    background-color:$primary;
+  }
+  .site-navigation {
+    ul {
+      margin:0;
+      padding:0;
+      @include cf;
+    }
+    ul li {
+      list-style-type:none;
+    }
+    ul li a {
+      display:block;
+      @include background-image(linear-gradient(top, white 0, $light-grey 30%, $light-grey 70%, white 100%));
+      padding:12px 0 12px 12px;
+    }
+    @include min-screen(nth($res-collection, 4)*1px) {
+      @include span(1/1);
+      @include navigation-horizontal($ul-width:100%);
+      ul li {
+        @include span(1/10);
+        text-align:center;
+      }
+      ul li a {
+        font-size:$font-medium;
+        padding:12px 0;
+      }
+      font-weight:800;
+      .navigation-divide {
+        border-right:1px solid $tertiary;
+      }
+    }
+  }
+  .global-navigation {
+    display:none;
+    @include min-screen(nth($res-collection, 4)*1px) {
+      display:block;
+      @include span(3/12, $offset: 9/12);
+      @include navigation-horizontal($float: right);
+      font-size:$font-small;
+      margin-top:15px;
+      padding-right:15px;
+      a {
+        padding-right:$spacing-small;
+        text-transform:uppercase;
+        color:$tertiary;
+      }
+      .global-navigation-divide::after {
+        content: "\007C";
+        padding-left:$spacing-small;
+      }
+      ul {
+        padding-right:15px;
+      }
+    }
+  }
+}

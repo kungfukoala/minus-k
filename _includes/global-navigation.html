@@ -1,8 +1,3 @@
-<ul>
-  {% for link_hash in site.data.global_navigation.global_navigation %}
-  {% assign link = link_hash[1] %}
-  {% capture active %}{{ link.url | handle }}{% endcapture %}
-    <li><a href="{{ link.url | prepend: site.baseurl }}" class="navigation-link{% if page.permalink == active %} active{% endif %}">{{ link.text }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<ul>{% for link_hash in site.data.global_navigation.global_navigation %}{% assign link = link_hash[1] %}
+    <li><a href="{{ link.url | prepend: site.baseurl }}" class="{% if forloop.last %}{% else %}global-navigation-divide{% endif %}">{{ link.text }}</a></li>{% endfor %}
+  </ul>
