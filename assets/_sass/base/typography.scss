@@ -4,25 +4,33 @@ body {
   color:$base-font-color;
   font-family:$base-font-family;
   font-size:$base-font-size;
+  @include min-screen(nth($res-collection, 3)*1px) {
+    font-size:$font-small;
+  }
+}
+a, a:visited, a:active {
+  color:$secondary;
+  text-decoration:none;
+}
+a:hover {
+  color:black;
 }
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family:$heading-font-family;
-  margin:$medium-spacing 0;
-  font-weight:100;
+
 }
-h1, h2, h3, h4, h5, h6 {
-  @extend .h1;
+h1 {
+  font-size:1.8em;
 }
-.h2, h2 {
-  font-size:2em;
+h2 {
+  font-size:1.6em;
 }
-.h3, h3 {
-  font-size:1.7em;
-  margin:$small-spacing;
+h3 {
+  font-size:1.4em;
 }
-.h4, h4 {
-  font-size:1em;
+h4 {
+  font-size:1.2em;
 }
+
 p {
   line-height:$base-line-height;
 }
@@ -30,10 +38,10 @@ em, i, q {
   font-style:italic;
 }
 ul {
-  @include nobullet;
+  padding-left:$spacing-medium;
 }
 ol {
-  @include nobullet;
+  @extend ul;
 }
 li {
   line-height:$base-line-height;
@@ -42,6 +50,6 @@ strong, b {
   font-weight:800;
 }
 small {
-  font-size:$font-small;
+  font-size:$font-xsmall;
   line-height:1em;
 }

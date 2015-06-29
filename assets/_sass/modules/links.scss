@@ -1,0 +1,8 @@
+.arrow-link::before {
+  content:"";
+  width:6px;
+  height:10px;
+  display:inline-block;
+  padding-right:6px;
+  @include background-images('arrow_red.gif', $x: center, $y: left);
+}

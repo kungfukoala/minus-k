@@ -8,20 +8,59 @@
   }
 }
 .case-study {
-  @include span(3/12);
+  @include span(12/12);
+  @include min-screen(nth($res-collection, 4)*1px) {
+    @include span(3/12);
+  }
 }
 .advantages {
+  background-color:$light-grey;
   @extend .case-study;
 }
 .vibration-isolation {
-  @include span(6/12);
+  @include span(12/12);
+  text-align:center;
+  @include min-screen(nth($res-collection, 4)*1px) {
+    @include span(6/12);
+  }
 }
 .press-release {
+  background-color:$light-grey;
   @extend .case-study;
 }
-.floor-platform, .in-the-news {
-  @include span(6/12);
+.floor-platform {
+  @include span(12/12);
+  @include min-screen(nth($res-collection, 4)*1px) {
+    @include span(7/12);
+  }
+}
+.in-the-news {
+  @include span(12/12);
+  @include min-screen(nth($res-collection, 4)*1px) {
+    @include span(5/12);
+  }
 }
 .for-use-in {
   @include span(12/12);
+}
+.home-header-orange {
+  padding:8px;
+  color:white;
+  @include background-images('headers-orange.jpg', $y: -85px);
+  background-color:$orange;
+  h3 {
+    margin:0;
+    font-weight:500;
+  }
+}
+.home-header-blue {
+  padding:12px;
+  color:white;
+  text-align:center;
+  @include background-images('headers-blue.jpg', $y: -85px);
+  background-color:$blue;
+  h3 {
+    margin:0;
+    font-weight:700;
+  }
 }

@@ -2,13 +2,14 @@
 ---
 // SETTINGS
 @import 'settings/variables';
+// PLUGINS
+@import 'bourbon/bourbon';
+@import 'jeet/index';
 // BASE
 @import 'base/mediaqueries';
 @import 'base/normalize';
 @import 'base/helpers';
-// PLUGINS
-@import 'bourbon/bourbon';
-@import 'jeet/index';
+@import 'base/typography';
 // MIXINS
 @import 'mixins/mixins';
 // EXTEND
@@ -18,6 +19,7 @@
 @import 'layouts/home';
 // MODULES
 @import 'modules/header';
+@import 'modules/links';
 // PAGES
 
 // OH SHIT
