@@ -39,6 +39,19 @@
   @include min-screen(nth($res-collection, 4)*1px) {
     @include span(5/12);
   }
+  .content {
+    border-left:1px solid black;
+  }
+  td {
+    padding-left:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+  th {
+    padding-top:5px;
+    vertical-align:text-top;
+    width:200px;
+  }
 }
 .for-use-in {
   @include span(12/12);
