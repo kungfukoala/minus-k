@@ -2,16 +2,16 @@
   @include col(12/12);
   @include unshift();
   @include min-screen(nth($res-collection, 4)*1px) {
-    @include col(8/12);
-    @include shift(4/12);
+    @include col(9/12);
+    @include shift(3/12);
   }
 }
 .page-aside {
   @include col(12/12);
   @include unshift();
   @include min-screen(nth($res-collection, 4)*1px) {
-    @include col(4/12);
-    @include shift(-8/12);
+    @include col(3/12);
+    @include shift(-9/12);
   }
   .page-navigation {
     ul {
