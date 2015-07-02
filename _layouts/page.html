@@ -2,10 +2,24 @@
 layout: default
 ---
 <div class="page">
-  <header class="page-header">
-    <h1 class="page-title">{{ page.title }}</h1>
-  </header>
-  <article class="page-content">
-  {{ content }}
-  </article>
+  <div class="container">
+    <article class="page-content">
+      <header class="page-header">
+        <h1 class="page-title">{{ page.title }}</h1>
+      </header>
+      {{ content }}
+    </article>
+    <aside class="page-aside">
+      <nav class="page-navigation">
+        <ul>
+          <li><a href="/content/about_vibration_isolation_passive_vibration_isolators.html">About Minus K</a></li>
+          <li><a href="/content/about-minus-k/customers_anti_vibration_isolation_vibration_control.html">Customers</a></li>
+          <li><a href="/content/about-minus-k/testimonials_vibration_control_anti_vibration_isolation_vibration_isolators_minus_k.html">Testimonials</a></li>
+          <li><a href="/content/about-minus-k/faq_vibration_isolator_minus_k_vibration_isolators.html">F.A.Q.</a></li>
+          <li><a href="http://minusk.com/content/in-the-news_vibration_control_anti_vibration_isolation.html">In The News</a></li>
+        </ul>
+      </nav>
+      {% include newsletter.html %}
+    </aside>
+  </div>
 </div>

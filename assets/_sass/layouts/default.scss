@@ -6,6 +6,7 @@
 }
 .footer {
   @include span(12/12);
+  margin-top:$spacing-xlarge;
   text-align:center;
   font-weight:normal;
   a {

@@ -1,0 +1,42 @@
+.page-content {
+  @include col(12/12);
+  @include unshift();
+  @include min-screen(nth($res-collection, 4)*1px) {
+    @include col(8/12);
+    @include shift(4/12);
+  }
+}
+.page-aside {
+  @include col(12/12);
+  @include unshift();
+  @include min-screen(nth($res-collection, 4)*1px) {
+    @include col(4/12);
+    @include shift(-8/12);
+  }
+  .page-navigation {
+    ul {
+      margin:0;
+      padding:$spacing-small;
+      list-style-type:none;
+      
+      li {
+        padding:$spacing-small;
+        border-right:1px solid $dark-grey;
+        border-left:1px solid $dark-grey;
+        border-bottom:1px solid $dark-grey;
+        @include background-images("arrow_ltwh.gif", $y: 7px, $x: center);
+        background-color:$light-grey;
+        a {
+          padding-left:15px;
+        }
+        &:first-child {
+          a {
+            color:white;
+          }
+          @include background-images("arrow_wh_down.gif", $y: 7px, $x: center);
+          background-color:$primary;
+        }
+      }
+    }
+  }
+}

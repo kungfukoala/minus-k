@@ -1,0 +1,17 @@
+      <div class="newsletter">
+        <p><b>Keep informed of new products!</b><br>
+        Enter your e-mail address to join our mailing list.</p>
+        <form action="/content/contact_add.php" method="POST" onSubmit=" if (this.Email.value=='') { alert('Please enter an email address'); return false;} else {return true;}">
+          <input type="hidden" name="typeForm" value="join" />
+          <input type="hidden" name="thankyou" value = "/content/thank-you.html" />
+          <input type="hidden" name="zaoContactModName" value="contacts" />
+          <input type="hidden" name="recipient" value="sales@minusk.com" /> 
+          <div class="signup_form">
+            <h6>Keep informed of new products!</h6>
+            Enter your e-mail address to join our mailing list.<br />
+            <input name="Email" type="text" size="15" class="signup_fe" />
+            <br />
+            <input type="image" src="/assets/images/button_signup.gif" name="submit" value="submit" class="signup_fe" />
+          </div>
+        </form>
+      </div>
