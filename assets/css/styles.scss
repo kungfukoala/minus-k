@@ -5,22 +5,24 @@
 // PLUGINS
 @import 'bourbon/bourbon';
 @import 'jeet/index';
+// MIXINS
+@import 'mixins/mixins';
+// EXTEND
+@import 'extend/placeholders';
 // BASE
 @import 'base/mediaqueries';
 @import 'base/normalize';
 @import 'base/helpers';
 @import 'base/typography';
-// MIXINS
-@import 'mixins/mixins';
-// EXTEND
-@import 'extend/placeholders';
+@import 'base/headers';
+@import 'base/links';
+
 // LAYOUT
 @import 'layouts/default';
 @import 'layouts/home';
 @import 'layouts/page';
 // MODULES
 @import 'modules/header';
-@import 'modules/links';
 @import 'modules/newsletter';
 // PAGES
 

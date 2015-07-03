@@ -4,11 +4,18 @@
     float:right;
     padding-left:$spacing-small;
   }
+  @include max-screen(nth($res-collection, 4)*1px) {
+    float:none;
+  }
 }
 .float-left {
   float:left;
   &-padding {
     float:left;
     padding-right:$spacing-small;
+  }
+  
+  @include max-screen(nth($res-collection, 4)*1px) {
+    float:none;
   }
 }

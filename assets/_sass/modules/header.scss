@@ -29,7 +29,10 @@
     ul li a {
       display:block;
       @include background-image(linear-gradient(top, white 0, $light-grey 30%, $light-grey 70%, white 100%));
-      padding:12px 0 12px 12px;
+      padding:0.5em 0.5em 0.5em 0.5em;
+      @include min-screen(nth($res-collection, 4)*1px) {
+        padding:12px 0 12px 12px;
+      }
     }
     @include min-screen(nth($res-collection, 4)*1px) {
       @include span(1/1);

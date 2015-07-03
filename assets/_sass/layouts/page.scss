@@ -1,3 +1,11 @@
+.page {
+  padding:1em 1em 1em 1em;
+  clear:both;
+  @include cf();
+  @include min-screen(nth($res-collection, 4)*1px) {
+    padding:1em 0px 0px 0px;
+  }
+}
 .page-content {
   @include col(12/12);
   @include unshift();

@@ -50,11 +50,22 @@
   th {
     padding-top:5px;
     vertical-align:text-top;
-    width:200px;
+    width:20%;
+  }
+  td {
+    width:80%;
   }
 }
 .for-use-in {
   @include span(12/12);
+  text-align:center;
+}
+.for-use-list {
+  @include col(1/4, $cycle: 4);
+  text-align:left;
+  @include max-screen(nth($res-collection, 4)*1px) {
+    @include col(4/4, $uncycle: 4);
+  }
 }
 .home-header-orange {
   padding:8px;

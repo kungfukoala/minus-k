@@ -5,12 +5,16 @@
   @include cf();
 }
 .footer {
-  @include span(12/12);
+  padding:1em 1em 1em 1em;
   margin-top:$spacing-xlarge;
+  font-size:$font-medium;
   text-align:center;
   font-weight:normal;
   a {
     color:black;
+  }
+  @include min-screen(nth($res-collection, 4)*1px) {
+    padding:0;
   }
 }
 .content {
