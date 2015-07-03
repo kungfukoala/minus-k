@@ -16,14 +16,16 @@
 @import 'base/typography';
 @import 'base/headers';
 @import 'base/links';
-
+@import 'base/colors';
 // LAYOUT
 @import 'layouts/default';
 @import 'layouts/home';
 @import 'layouts/page';
+@import 'layouts/products';
 // MODULES
 @import 'modules/header';
 @import 'modules/newsletter';
+@import 'modules/business-seals';
 // PAGES
 
 // OH SHIT

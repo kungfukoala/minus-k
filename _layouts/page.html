@@ -8,6 +8,9 @@ layout: default
         <h1 class="page-title">{{ page.title }}</h1>
       </header>
       {{ content }}
+      {% if page.url == "/content/about_vibration_isolation_passive_vibration_isolators.html" %}
+      {% include business-seals.html %}
+      {% endif %}
     </article>
     <aside class="page-aside">
       <nav class="page-navigation">

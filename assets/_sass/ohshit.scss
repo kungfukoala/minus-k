@@ -19,3 +19,11 @@
     float:none;
   }
 }
+.padding {
+  padding:$spacing-medium;
+}
+.flex {
+  @include min-screen(nth($res-collection, 4)*1px) {
+    @include display(flex);
+  }
+}

@@ -1,3 +1,6 @@
+body {
+  @include display(flex);
+}
 .main-container {
   @include center(980px);
 }

@@ -3,29 +3,29 @@ main_navigation:
     url:  "/"
     text: "Home"
   about:
-    url:  "content/about_vibration_isolation_passive_vibration_isolators.html"
+    url:  "/content/about_vibration_isolation_passive_vibration_isolators.html"
     text: "About Minus K"
   applications:
-    url:  "content/applications_vibration_isolation_systems.html"
+    url:  "/content/applications_vibration_isolation_systems.html"
     text: "Applications"
   products:
-    url:  "content/products-vibration-isolation-isolators-tables-systems.html"
+    url:  "/content/products-vibration-isolation-isolators-tables-systems.html"
     text: "Products"
   technology:
-    url:  "content/technology_passive_vibration_isolation_vibration_isolators.html"
+    url:  "/content/technology_passive_vibration_isolation_vibration_isolators.html"
     text: "Technology"
   events:
-    url:  "content/events_vibration_isolation_nanotechnology_tradeshows.html"
+    url:  "/content/events_vibration_isolation_nanotechnology_tradeshows.html"
     text: "Events"
   news:
-    url:  "content/in-the-news_vibration_control_anti_vibration_isolation.html"
+    url:  "/content/in-the-news_vibration_control_anti_vibration_isolation.html"
     text: "In The News"
   contact:
-    url:  "content/contact_for_vibration_isolation_platforms_tables_isolators.html"
+    url:  "/content/contact_for_vibration_isolation_platforms_tables_isolators.html"
     text: "Contact Us"
   links:
-    url:  "content/links_anti_vibration_isolator_vibration_isolators.html"
+    url:  "/content/links_anti_vibration_isolator_vibration_isolators.html"
     text: "Links"
   price:
-    url:  "content/price-list_vibration_isolators_table_platforms_benchtops.html"
+    url:  "/content/price-list_vibration_isolators_table_platforms_benchtops.html"
     text: "Price List"

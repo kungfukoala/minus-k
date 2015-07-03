@@ -1,0 +1,23 @@
+.product {
+  border-top:1px dashed $grey;
+  @include col(3/3);
+  @include min-screen(nth($res-collection, 4)*1px) {
+    @include display(flex);
+  }
+  .product-photo {
+    @include col(3/3);
+    img {
+      padding:$spacing-small;
+    }
+    @include min-screen(nth($res-collection, 4)*1px) {
+      @include col(1/3);
+    }
+  }
+  .product-content {
+    @include col(3/3);
+    background-color:$light-grey;
+    @include min-screen(nth($res-collection, 4)*1px) {
+      @include col(2/3);
+    }
+  }
+}
