@@ -1,0 +1,27 @@
+.news-year {
+  width:100%;
+  text-align:center;
+}
+.news-item {
+  padding:0;
+  li {
+    @include col(3/3);
+    list-style-type:none;
+  }
+  @include min-screen(nth($res-collection, 4)*1px) {
+    @include cf();
+    li {
+      float:left;
+      clear:none;
+      margin-left:0;
+      margin-right:1em;
+      width:400px;
+    }
+    li:first-child {
+      width:200px;
+    }
+    li:last-child {
+      width:100px;
+    }
+  }
+}

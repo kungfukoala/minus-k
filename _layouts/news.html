@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div class="page">
+    <section class="page-content">
+      <header class="page-header">
+        <h1 class="page-title">{{ page.title }}</h1>
+      </header>
+      <article class="page-article">
+      {{ content }}
+      {% if page.url == "/content/about_vibration_isolation_passive_vibration_isolators.html" %}
+      {% include business-seals.html %}
+      {% endif %}
+      </article>
+    </section>
+    <aside class="page-aside">
+      <nav class="page-navigation">
+        <ul>
+          <li class="active-black"><a href="http://minusk.com/content/in-the-news_vibration_control_anti_vibration_isolation.html">In The News</a></li>
+          <li><a href="http://minusk.com/content/newsletters_vibration_isolation_technology_information.html">Newsletters</a></li>
+        </ul>
+      </nav>
+      {% include newsletter.html %}
+    </aside>
+</div>
