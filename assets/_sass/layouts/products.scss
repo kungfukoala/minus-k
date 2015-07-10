@@ -21,3 +21,38 @@
     }
   }
 }
+.product-title, .product-contact {
+  @include col(2/2);
+  @include min-screen(nth($res-collection, 4)*1px) {
+    @include col(1/2);
+  }
+}
+.product-contact {
+  text-align:center;
+  img {
+    margin-top:1em;
+    margin-bottom:1em;
+  }
+  @include min-screen(nth($res-collection, 4)*1px) {
+    img {
+      margin-top:2em;
+    }
+  }
+}
+.product-information, .product-specifications {
+  @include col(2/2);
+  @include unshift();
+  @include min-screen(nth($res-collection, 4)*1px) {
+    @include col(1/2);
+  }
+}
+.product-information {
+  @include min-screen(nth($res-collection, 4)*1px) {
+    @include shift(1/2);
+  }
+}
+.product-specifications {
+  @include min-screen(nth($res-collection, 4)*1px) {
+    @include shift(-1/2);
+  }
+}

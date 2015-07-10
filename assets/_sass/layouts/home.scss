@@ -1,10 +1,28 @@
-.introduction {
-  @include span(9/12);
-  .interactive-area {
-    @include span(4/6);
+.video-example {
+  display:block;
+  @include min-screen(nth($res-collection, 4)*1px) {
+    display:none;
   }
-  .new-product {
-    @include span(2/6);
+}
+.introduction {
+  display:none;
+  @include min-screen(nth($res-collection, 4)*1px) {
+    display:block;
+    @include span(9/12);
+    .interactive-area {
+      width:536px;
+      float:left;
+    }
+    .new-product-feature {
+      width:198px;
+      height:280px;
+      float:left;
+      text-align:center;
+      @include background-images('home_cs_bg.jpg');
+    }
+    .new-product {
+      padding-top:55px;
+    }
   }
 }
 .case-study {
@@ -59,6 +77,7 @@
 .for-use-in {
   @include span(12/12);
   text-align:center;
+  padding:$spacing-medium;
 }
 .for-use-list {
   @include col(1/4, $cycle: 4);

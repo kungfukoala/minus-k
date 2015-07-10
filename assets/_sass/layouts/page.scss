@@ -1,14 +1,9 @@
 .page {
-  padding:1em 1em 1em 1em;
-  clear:both;
-  @include cf();
-  @include min-screen(nth($res-collection, 4)*1px) {
-    padding:1em 0px 0px 0px;
-  }
+  @include col(12/12);
+  padding-top:1em;
 }
 .page-content {
-  @include col(12/12);
-  @include unshift();
+  margin:0.5em 0.5em 0.5em 0.5em;
   @include min-screen(nth($res-collection, 4)*1px) {
     @include col(9/12);
     @include shift(3/12);
@@ -16,33 +11,46 @@
 }
 .page-aside {
   @include col(12/12);
-  @include unshift();
   @include min-screen(nth($res-collection, 4)*1px) {
     @include col(3/12);
     @include shift(-9/12);
   }
   .page-navigation {
     ul {
-      margin:0;
-      padding:$spacing-small;
+      margin:$spacing-small $spacing-small $spacing-small 0;
+      padding-left:$spacing-small;
       list-style-type:none;
-      
+      .active-black {
+        a {
+          color:white;
+        }
+        @include background-images("arrow_wh_down.gif", $y: 7px, $x: center);
+        background-color:$primary;
+      }
       li {
-        padding:$spacing-small;
         border-right:1px solid $dark-grey;
         border-left:1px solid $dark-grey;
         border-bottom:1px solid $dark-grey;
         @include background-images("arrow_ltwh.gif", $y: 7px, $x: center);
         background-color:$light-grey;
         a {
-          padding-left:15px;
+          display:block;
+          padding:$spacing-small;
+          padding-left:24px;
         }
-        &:first-child {
-          a {
-            color:white;
+        ul {
+          margin:0;
+          padding:0;
+          li {
+            padding:0;
+            border:none;
+            @include background-images("arrow_ltwh.gif", $y: 15px, $x: center);
+            background-color:white;
+            a {
+              color:$primary;
+              padding-left:30px;
+            }
           }
-          @include background-images("arrow_wh_down.gif", $y: 7px, $x: center);
-          background-color:$primary;
         }
       }
     }

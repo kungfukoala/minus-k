@@ -3,21 +3,20 @@ body {
 }
 .main-container {
   @include center(980px);
+  border:1px solid black;
 }
 .container {
   @include cf();
 }
 .footer {
-  padding:1em 1em 1em 1em;
+  @include col(1/1);
   margin-top:$spacing-xlarge;
+  margin-bottom:$spacing-xlarge;
   font-size:$font-medium;
   text-align:center;
   font-weight:normal;
   a {
     color:black;
-  }
-  @include min-screen(nth($res-collection, 4)*1px) {
-    padding:0;
   }
 }
 .content {

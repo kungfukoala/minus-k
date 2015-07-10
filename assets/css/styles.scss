@@ -14,7 +14,6 @@
 @import 'base/normalize';
 @import 'base/helpers';
 @import 'base/typography';
-@import 'base/headers';
 @import 'base/links';
 @import 'base/colors';
 // LAYOUT
@@ -26,6 +25,9 @@
 @import 'modules/header';
 @import 'modules/newsletter';
 @import 'modules/business-seals';
+@import 'modules/product-specifications';
+@import 'modules/video-responsive';
+@import 'modules/grids';
 // PAGES
 
 // OH SHIT

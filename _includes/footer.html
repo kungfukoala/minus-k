@@ -2,11 +2,18 @@
   <p>460 S. Hindry Ave., Unit C Inglewood, CA 90301<br>
   Tel: 310-348-9656 Fax: 310-348-9638<br>
   <a href="http://www.minusk.com/content/contact_for_vibration_isolation_platforms_tables_isolators.html">Contact Us</a>  <a href="http://www.minusk.com/">www.MinusK.com</a><p>
-  <small>
     Copyright &copy; {{ date: '%Y' }} Minus K Technology. All rights reserved. 
-  </small>
 </footer>
-
+<script>
+  function zaoObfEmail(tla,dom,email,str) {
+  var ad=email+"@"+dom+"."+tla;
+  if (!str) str=ad;
+  if (str.indexOf('?')!=-1) str=str.substr(0,str.indexOf('?'));
+  var zao_emwrite='<a  href="mailto:'+ad+'">'+str+'</a>';
+  //alert(emwrite);
+  	document.write(zao_emwrite);
+  }
+</script>
 {% if site.google_analytics %}
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

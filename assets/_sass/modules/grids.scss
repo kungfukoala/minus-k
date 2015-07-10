@@ -1,0 +1,15 @@
+.one-column {
+  @include col(1/1);
+}
+.two-column {
+  @include col(1/1);
+  @include min-screen(nth($res-collection, 4)*1px) {
+    @include col(1/2);
+  }
+}
+.three-column {
+  @include col(1/1);
+  @include min-screen(nth($res-collection, 4)*1px) {
+    @include col(1/3);
+  }
+}
