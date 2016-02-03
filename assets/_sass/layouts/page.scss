@@ -9,6 +9,12 @@
     @include shift(3/12);
   }
 }
+.page-article {
+  padding-right:1px;
+  @include min-screen(nth($res-collection, 4)*1px) {
+    padding-right:10px;
+  }
+}
 .page-aside {
   @include col(12/12);
   @include min-screen(nth($res-collection, 4)*1px) {

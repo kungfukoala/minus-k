@@ -1,12 +1,18 @@
 body {
-  @include display(flex);
+
 }
 .main-container {
   @include center(980px);
   border:1px solid black;
+  margin-bottom:2px;
+}
+.footer-container {
+  @include center(980px);
+  flex-wrap:wrap;
+  margin-bottom:15px;
 }
 .container {
-  @include cf();
+   @include cf();
 }
 .footer {
   @include col(1/1);
